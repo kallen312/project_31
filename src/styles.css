@@ -1,4 +1,21 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  
+}
+
+@media (max-width: 400px) {
+  .grid {
+    display: block;
+    justify-content: space-around;
+  }
+}
+  
+
+
+
+
+
+.grid-fourths  .col{
+  width: 32%;
 }
