@@ -1,21 +1,16 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  
 }
 
-@media (max-width: 400px) {
-  .grid {
-    display: block;
-    justify-content: space-around;
-  }
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-  
-
-
-
-
-
-.grid-fourths  .col{
-  width: 32%;
+.cardStyle {
+  padding: 3rem;
+  margin: 0.1rem;
+  border-style: solid;
 }
