@@ -21,10 +21,14 @@ export default function App() {
     "blue",
     "pink",
     "white",
+    "green",
+    "purple",
     "orange",
     "blue",
     "pink",
-    "white"
+    "white",
+    "green",
+    "purple"
   ];
 
   return (
