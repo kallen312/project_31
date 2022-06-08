@@ -33,6 +33,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <h1>Card Memory Game</h1>
       <div className="grid">
         {cards.map((color) => {
           return <Card color={color} />;
@@ -46,11 +47,15 @@ export default function App() {
 function Card(props) {
   const [isFlipped, setIsFlipped] = useState(false);
 
-  const [card1, setCard1] = useState("");
+  //const [card1, setCard1] = useState("");
 
-  const [card2, setCard2] = useState("");
+  //const [card2, setCard2] = useState("");
+
+  const [openCard, setOpenCard] = useState([]);
 
   const [counter, setCounter] = useState(0);
+
+  const [ismatchCard, setIsmatchCard] = useState(false);
   // if it isFlipped = true, then show the current card
   // if not, show a card with a black background
 
@@ -58,11 +63,19 @@ function Card(props) {
   // add condition
   // return '' or props.color
 
-  function handleClick() {
+  function handleClick(index) {
     setIsFlipped(true);
 
-    setCard1(props.color);
-    //setCounter(counter + 1)
+    if (openCard.length === 1) {
+    } else {
+    }
+
+    // setCard1(props.color);
+
+    //setCounter(counter + 1);
+    if (ismatchCard) {
+      return {};
+    }
   }
 
   function changeStyle() {
@@ -79,3 +92,9 @@ function Card(props) {
     </div>
   );
 }
+
+//const checkComparsion =() => {
+//if () {
+// return
+//};
+//}
